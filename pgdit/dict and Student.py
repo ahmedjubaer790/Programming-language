@@ -17,13 +17,13 @@ student=[{'ID':101,
 
 new=    {'ID':input('Type Id: '),
          'NAME':input('Type name: '),
-         'DEPT':input('Type Dept'),
-         'CGPA':input('Type cg')
+         'DEPT':input('Type Dept: '),
+         'CGPA':input('Type cg: ')
          }
 student.append(new)
 print(student)
 
-search_opt=input('Search the name')
+search_opt=input('Search the name: ')
 
 for s in student:
     if s['NAME']==search_opt:
@@ -32,5 +32,8 @@ for s in student:
         print(s)
     elif s['CGPA']==search_opt:
         print(s)
+    elif s['ID']==search_opt:
+        print(s)    
+
 df=pd.DataFrame(student)
-df.to_excel('output.xlsx',index=False) 
+df.to_excel('output.xlsx',index=False)
