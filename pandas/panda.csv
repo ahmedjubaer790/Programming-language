@@ -1,0 +1,12 @@
+id,name,signup_date,score
+1,Alice,2023/01/15,85
+2,Bob,12-05-2022,90
+3,Charlie,,78
+4,David,2023-03-10,
+5,Eve,January 5th 2023,92
+2,Bob,12-05-2022,90
+6,Frank,2023/02/28,88
+3,Charlie,,78
+7,Grace,invalid_date,95
+8,Heidi,2023/04/12,82
+2,Bob,12-05-2022,90
