@@ -1,0 +1,97 @@
+wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+#topnav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: Arial,sans-serif;
+    font-size: bold;
+    
+    
+}
+
+#topnav{
+    background-image:url('topnavbg.jpg') ;
+    background-size: auto;
+    /* for row by row in same line  */
+    background-size:contain;
+    background-position: center;
+     display: flex;
+    justify-content: flex-end;
+    margin-left:528PX;
+    margin-right:528PX;
+    
+    }
+
+#hdr{
+    background-image: url('black-jack-casino.jpg');
+    height:150px;
+    background-size: 100% 100%;
+
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center;
+    margin-top: .5px;
+}
+
+#navbar{
+    background-image: url('navbg.jpg');
+    height: 10px;
+    margin-left: 528PX;
+    margin-right: 528PX;
+}
+
+#lefsidebar{
+    background-image: url('leftnav.jpg');
+    height:700px;
+    width: 200px;
+    margin-left: 528PX;
+    background-size:contain;
+
+}
+#bargif{
+    background-image: url('bar.gif');
+    height: 10px;
+    width: 848px ;
+   background-size: contain;
+}
+
+#main-content{
+    display: flex;
+}
+#btn{
+    margin-top: 4px;
+}
+.sidebtn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+
+  .sidebtn{
+    background-image: url('leftnavbutton.jpg');
+  }
+
+  #leftnavdown{
+    background-image: url('leftnavdown.jpg');
+    margin-top: 25px;
+    height:170px;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center;
+    
+  }
+
+  #rightnav{
+    background-image: url('rightnav.jpg');
+    height:700px;
+    width: 200px;
+    float: right;
+  }
+
