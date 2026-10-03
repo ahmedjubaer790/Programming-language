@@ -1,97 +1,152 @@
-wrap{
-    width: 1000px;
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family:  Arial, Helvetica, sans-serif;;
+}
+
+#wrap{
+    width: 780px;
     margin: 0 auto;
 }
-#topnav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-family: Arial,sans-serif;
-    font-size: bold;
-    
-    
+
+#header{
+    position: relative;
 }
 
 #topnav{
-    background-image:url('topnavbg.jpg') ;
-    background-size: auto;
-    /* for row by row in same line  */
-    background-size:contain;
-    background-position: center;
-     display: flex;
-    justify-content: flex-end;
-    margin-left:528PX;
-    margin-right:528PX;
-    
-    }
-
-#hdr{
-    background-image: url('black-jack-casino.jpg');
-    height:150px;
-    background-size: 100% 100%;
-
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position: center;
-    margin-top: .5px;
-}
-
-#navbar{
-    background-image: url('navbg.jpg');
-    height: 10px;
-    margin-left: 528PX;
-    margin-right: 528PX;
-}
-
-#lefsidebar{
-    background-image: url('leftnav.jpg');
-    height:700px;
-    width: 200px;
-    margin-left: 528PX;
-    background-size:contain;
-
-}
-#bargif{
-    background-image: url('bar.gif');
-    height: 10px;
-    width: 848px ;
-   background-size: contain;
-}
-
-#main-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
     display: flex;
+    justify-content: flex-end;
+    background-image: url('topnavbg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2px 10px;
 }
-#btn{
-    margin-top: 4px;
+
+#topnav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 13px;
+    font-weight: bold;
 }
+
+#hdr {
+    background-image: url('black-jack-casino.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 160px;
+}
+
+#navbar,#navbar-bottom{
+    background-image: url('navbg.jpg');
+    background-size: 100% 100%;
+    height: 14px;
+}
+#bargif,#bargifdown{
+    background-image: url('bar.gif');
+     background-size: 100% 100%;
+    height: 14px;
+}
+
+#main {
+    display: flex;
+    align-items: stretch;
+}
+
+#leftsidebar{
+    width: 150px;
+    flex-shrink: 0;
+    background-image:  url('leftnav.jpg');
+    background-size: 100% 100%;
+    padding-top: 15px;
+}
+
 .sidebtn{
     display: block;
     text-align: center;
     text-decoration: none;
     margin-bottom: 11px;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 14px;
+    line-height: 14px;
+    font-size: 13px;
     font-weight: bold;
     color: white;
-  }
-
-  .sidebtn{
     background-image: url('leftnavbutton.jpg');
-  }
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
-  #leftnavdown{
+}
+
+#leftnavdown{
     background-image: url('leftnavdown.jpg');
-    margin-top: 25px;
-    height:170px;
-    background-repeat:no-repeat;
-    background-size:contain;
+    background-repeat: no-repeat;
     background-position: center;
-    
-  }
+    background-size: contain;
+    height: 170px;
+    margin-top: 25px;
+}
 
-  #rightnav{
+#middle-content{
+    flex: 1;
+    background: #ffffff;
+    padding: 0 8px 20px;
+}
+
+.wlecome{
+    text-align: center;
+    margin-top: -0;
+    font-size: 20px;
+    background-image: url('centre-bar.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: #ffffff;
+
+}
+.ad-banner{
+    background-image: url('centeradd.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 60px;
+    margin-bottom: 15px;
+   
+}
+
+#middle-content p{
+    font-size: 11px;
+    color: #333;
+    line-height: 1.4;
+    text-align: justify;
+    margin: 0 0 25px;
+
+}
+
+#rightnav{
+    width: 150px;
+    flex-shrink: 0;
     background-image: url('rightnav.jpg');
-    height:700px;
-    width: 200px;
-    float: right;
-  }
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
+
+}
+
+#footer{
+    text-align: center;
+    background-color: black;
+
+}
+
+#footer a,p{
+    text-decoration: none;
+    color: white;
+}
