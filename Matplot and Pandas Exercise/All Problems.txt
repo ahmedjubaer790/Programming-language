@@ -1,0 +1,111 @@
+
+
+
+
+
+You are working as a software developer, and you need to process a system log fil amed server.log.
+
+The file contains mixed messages:
+
+some are informative (INFO),
+
+some are warnings (WARNING), and
+
+others indicate critical failures (ERROR).
+
+our task is to filter out only the ERROR messages and save them into a new, eparate file for the IT support team to review.
+
+====================================================================================================================
+You are building a software module for a smart home system. You need to create a Therm class that manages the temperature of a room. To prevent users or other systems from unsafe or unrealistic temperatures, you must hide the raw data and enforce rules throu encapsulation
+
+Requirements:
+
+1. Private Attributes:
+
+Create a private attribute named_current_temperature (initialize it via the construc
+
+>Create a private attribute named node (e.g., "Heat", "Cool" , "Off").
+
+2. Getter Methods:
+
+>Create a method get_temperature() that returns the current temperature.
+
+>Create a method get_mode() that returns the current operational mode.
+
+3.Setter Methods with Validation:
+
+>Create a method set_temperature(temp) that accepts a float/int.
+
+--Validation rule: The temperature can only be set between 50°F and 90°F (inclusive). If value is outside this range, print an error message: "Error: Temperature must be between and 90 degrees." and do not change the value.
+
+>Create a method set_mode(mode).
+
+--Validation rule: The mode must be one of the following: "Heat", "Cool", or "Off". If an d mode is provided, print "Error: Invalid node."
+===========================================================================================================
+Question:
+
+You are tasked with creating a system to manage different types of musical instruments. Each instrument should have a play() method that describes how it produces sound.
+
+Implement the following:
+
+A base class Instrument with a placeholder play() method that raises a NotImplementedError.
+
+Two subclasses, Guitar and Piano, that inherit from Instrument.
+
+Each subclass should override the play() method to print a specific message describing its sound production (e.g., "Strumming the guitar" for Guitar, "Pressing the keys on the piano for Piano).
+
+Create a function make_instrument_play(instrument) that takes an Instrument object (or an object of its subclasses) as an argument and calls its play() method.
+
+Demonstrate polymorphism by creating instances of Guitar and Piano and passing them to the make_instrument_play, function.
+========================================================================================================
+Step 1.
+
+Create a base class Animal with two properties name and age, with an init method and a method speak() that prints all properties fo the class and the sound "Wow".
+
+Step 2.
+
+Derive two child classes Dog and Cat from Animal and override the speak method to reflect their sounds that prints "Woof" and "Meow" respectively. Both children class also have a property 'type' to reflect the breed of the animals.
+
+Step 3.
+
+Also, add init methods to the child classess. init method calls the parent's init method and in addition to that, initialize the value of "type".
+
+Step 4.
+
+Finally, create an object of Dog class with propties Max, 20 and German Shephard, and an object of Cat class with propties Kitty, 10 and Persian. Eventually, call the speak method of the created Dog and Cat objects
+================================================================================================
+
+1. Create a class named Book with properties length, width and depth.
+
+2. The class should also contain three methods getVolume(), getWeight(), setLengthwidthDepth(). get Methods are used to return the area and weight of the book and set method with three parameters 1, 
+w and d are used to set or update the state of the objects.
+
+3. Finally, create two book objects with different properties initialized as 0.
+
+4. Then, update the obejects with length, width and depth to 2, 3, 4 for the first obejcet and 9, 8, 7 for the second object.
+
+5. Next, call getweight and getVolume methods to display the weight and volume of two book objects.
+
+Note:
+
+The volume of a Book length"width*height
+
+Weight of a Book = 2 length 3"width 4 height
+===========================================================================================================================================================================
+LAST CLASS
+======================
+accepts three parameters: self, account_holder (string), and balance (float, with a default value of 0.0). Inside the constructor, use self to assign these values to instance attributes holder and balance.
+ * Add an instance method named deposit(self, amount) that adds the specified amount to self.balance and returns the new balance.
+ * Add an instance method named get_details(self) that uses self to return a formatted string: Account Holder: [holder], Balance: $[balance].
+Problem 2:
+ * Create a base class named Employee with an _init_ method taking self, name, and base_salary. Store them as instance attributes. Add a method calculate_pay(self) that returns self.base_salary.
+ * Create a derived class named Manager that inherits from Employee.
+ * The Manager class should have its own _init_ method that accepts name, base_salary, and an extra parameter bonus. Use super() to initialize the inherited attributes.
+ * Override the calculate_pay(self) method in the Manager class so that it returns the sum of base_salary and bonus.
+Problem 3:
+ * Create a base class named Notification with a method send(self, message) that raises a NotImplementedError("Subclass must implement abstract method").
+ * Create two subclasses that inherit from Notification:
+   * EmailNotification: Override the send(self, message) method to return the string "Email sent: " + message.
+   * SMSNotification: Override the send(self, message) method to return the string "SMS sent: " + message.
+ * Write a standalone helper function named trigger_alert(notification_obj, message) that takes any notification object and calls its send() method, returning the result. Show how different objects react 
+dynamically to the same method call.
