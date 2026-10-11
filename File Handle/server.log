@@ -1,0 +1,8 @@
+2025-01-15 10:00:01 INFO Server started on port 8080
+2025-01-15 10:05:22 WARNING Memory usage at 85%
+2025-01-15 10:10:45 ERROR Database connection failed
+2025-01-15 10:15:03 INFO User admin logged in
+2025-01-15 10:20:17 ERROR Disk space full on /dev/sda1
+2025-01-15 10:25:40 WARNING Slow response from API
+2025-01-15 10:30:09 INFO Health check done: no ERROR found
+2025-01-15 10:35:55 ERROR Payment service timeout
